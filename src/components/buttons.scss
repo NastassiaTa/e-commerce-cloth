@@ -1,0 +1,43 @@
+.btn {
+    font-size: 14px;
+    height: 46px;
+    padding: 16px 0;
+    border-radius: 62px;
+    width: 100%;
+    max-width: 100%;    
+    font-family: Satoshi;
+    font-weight: 500;    
+    color: #000; 
+    border: none;
+
+    &-primary {
+        color: #fff;
+        background: black;        
+    }
+
+    &-secondary {
+        background: transparent;              
+        border: 1px solid rgba(0, 0, 0, 0.10);        
+    }
+
+    &-subscribe{        
+        background: #fff;
+    }
+
+
+    &-small{
+        height: 42px;
+        padding: 12px 0;
+    }
+
+    &-medium{
+        height: 48px;
+        font-size: 16px;
+    }
+
+    &-large{
+        height: 52px;
+        font-size: 16px;
+    }
+}
+
