@@ -1,0 +1,55 @@
+.btn {
+    font-size: 14px;
+    height: 46px;
+    padding: 16px 0;
+    border-radius: 62px;
+    width: 100%;
+    max-width: 100%;    
+    font-family: Satoshi, sans-serif;
+    font-weight: 500;    
+    color: #000; 
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+
+    &-primary {
+        color: #fff;
+        background: #000;
+        &:hover, &:focus {
+            background: #363333;
+        }
+    }
+
+    &-secondary {
+        background: transparent;              
+        border: 1px solid #e5e5e5;
+        &:hover, &:focus {
+            background: #e5e5e5;
+        }
+    }
+
+    &-light{
+        background: #fff;
+        &:hover, &:focus {
+            background: #f6f6f6;
+        }
+    }
+
+
+    &-small{
+        height: 42px;
+        padding: 12px 0;
+    }
+
+    &-medium{
+        height: 48px;
+        font-size: 16px;
+    }
+
+    &-large{
+        height: 52px;
+        font-size: 16px;
+    }
+}
+
