@@ -5,23 +5,35 @@
     border-radius: 62px;
     width: 100%;
     max-width: 100%;    
-    font-family: Satoshi;
+    font-family: Satoshi, sans-serif;
     font-weight: 500;    
     color: #000; 
     border: none;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
 
     &-primary {
         color: #fff;
-        background: black;        
+        background: #000;
+        &:hover, &:focus {
+            background: #363333;
+        }
     }
 
     &-secondary {
         background: transparent;              
-        border: 1px solid rgba(0, 0, 0, 0.10);        
+        border: 1px solid #e5e5e5;
+        &:hover, &:focus {
+            background: #e5e5e5;
+        }
     }
 
-    &-subscribe{        
+    &-light{
         background: #fff;
+        &:hover, &:focus {
+            background: #f6f6f6;
+        }
     }
 
 
