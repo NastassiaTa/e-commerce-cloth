@@ -1,10 +1,9 @@
 .btn {
     font-size: 14px;
     height: 46px;
-    padding: 16px 0;
+    padding: 0 24px;
     border-radius: 62px;
-    width: 100%;
-    max-width: 100%;    
+    display: inline-block;
     font-family: Satoshi, sans-serif;
     font-weight: 500;    
     color: #000; 
@@ -50,6 +49,12 @@
     &-large{
         height: 52px;
         font-size: 16px;
+    }
+
+    &-full-width {
+        display: block;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
