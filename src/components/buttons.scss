@@ -62,36 +62,3 @@
 }
 
 
-.btnRadio-wrapper {
-    display: flex;
-}
-
-.btnRadio-form {
-    height: 46px;
-
-    &:not(:last-child) {
-        margin-right: 12px;
-    }
-
-    &_input {
-        display: none;
-    }
-
-    &_label {
-        @include basicBtn;
-        display: flex;
-        align-items: center;
-        background: $greyBackground;
-        height: 100%;       
-
-        &:hover {
-            background: $greyHover;
-        }
-    }
-
-}
-
-.btnRadio-form input:checked+label {
-    background: $black;
-    color: $white;
-}
