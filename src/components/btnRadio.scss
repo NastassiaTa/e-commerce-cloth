@@ -1,33 +1,41 @@
-.btnRadio-wrapper {
-    display: flex;
-}
-
-.btnRadio {
-    height: 46px;
+.btn-radio {
+    $parent: &;
 
     &:not(:last-child) {
         margin-right: 12px;
     }
+
 
     &_input {
         display: none;
     }
 
     &_label {
-        @include basicBtn;
-        display: flex;
-        align-items: center;
         background: $greyBackground;
-        height: 100%;       
+        display: block;
+        height: 46px;
+        line-height: 46px;
+        @include basicBtn;
 
         &:hover {
             background: $greyHover;
+            color: $white;
+        }
+
+    }
+
+    input:checked+label {
+        background: $black;
+        color: $white;
+    }
+
+
+    &-small {
+        
+        #{$parent}_label{
+            height: 39px;
+            line-height: 39px;
         }
     }
 
-}
-
-.btnRadio input:checked+label {
-    background: $black;
-    color: $white;
 }
