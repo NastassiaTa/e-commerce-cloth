@@ -1,0 +1,8 @@
+@mixin basicBtn {     
+    padding: 0 24px;
+    border-radius: 62px;
+    cursor: pointer;
+    transition: $transition;
+    display: inline-block;
+}
+

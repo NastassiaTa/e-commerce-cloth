@@ -1,0 +1,41 @@
+.btn-radio {
+    $parent: &;
+
+    &:not(:last-child) {
+        margin-right: 12px;
+    }
+
+
+    &_input {
+        display: none;
+    }
+
+    &_label {
+        background: $greyBackground;
+        display: block;
+        height: 46px;
+        line-height: 46px;
+        @include basicBtn;
+
+        &:hover {
+            background: $greyHover;
+            color: $white;
+        }
+
+    }
+
+    input:checked+label {
+        background: $black;
+        color: $white;
+    }
+
+
+    &-small {
+        
+        #{$parent}_label{
+            height: 39px;
+            line-height: 39px;
+        }
+    }
+
+}

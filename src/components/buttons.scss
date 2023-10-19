@@ -1,52 +1,55 @@
 .btn {
+    @include basicBtn;
+    
     font-size: 14px;
     height: 46px;
-    padding: 0 24px;
-    border-radius: 62px;
-    display: inline-block;
-    font-family: Satoshi, sans-serif;
-    font-weight: 500;    
-    color: #000; 
+    font-weight: 500;
+    color: $black;
     border: none;
-    cursor: pointer;
-    transition: .3s;
     outline: none;
+
 
     &-primary {
         color: #fff;
-        background: #000;
-        &:hover, &:focus {
-            background: #363333;
+        background: $primary;
+
+        &:hover,
+        &:focus {
+            background: $greyHover;
         }
     }
 
     &-secondary {
-        background: transparent;              
-        border: 1px solid #e5e5e5;
-        &:hover, &:focus {
-            background: #e5e5e5;
+        background: transparent;
+        border: 1px solid $secondary;
+
+        &:hover,
+        &:focus {
+            background: $secondary;
         }
     }
 
-    &-light{
-        background: #fff;
-        &:hover, &:focus {
-            background: #f6f6f6;
+    &-light {
+        background: $light;
+
+        &:hover,
+        &:focus {
+            background: $greyBackground;
         }
     }
 
 
-    &-small{
+    &-small {
         height: 42px;
         padding: 12px 0;
     }
 
-    &-medium{
+    &-medium {
         height: 48px;
         font-size: 16px;
     }
 
-    &-large{
+    &-large {
         height: 52px;
         font-size: 16px;
     }
@@ -57,4 +60,5 @@
         max-width: 100%;
     }
 }
+
 
