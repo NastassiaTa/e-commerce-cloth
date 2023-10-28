@@ -1,0 +1,50 @@
+.select {
+    position: relative;
+    width: 120px;
+    display: inline-block;
+
+
+    &::after {
+        content: "";
+        margin: auto;
+        position: absolute;
+        background: url(../../images/icons/Frame.svg);
+        top: 16px;
+        right: 15px;
+        height: 16px;
+        width: 16px;
+
+
+    }
+
+    select {
+        position: relative;
+        @include basicBtn;
+        border: none;
+        background: $greyBackground;
+        height: 48px;
+        color: $black;
+        width: 100%;
+        font-size: 16px;
+        appearance: none;
+        padding-left: 20px;
+        padding-right: 40px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    
+    
+    
+        &:hover {
+            background: $greyHover;
+            color: $white;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    
+    
+    }
+
+}
+
