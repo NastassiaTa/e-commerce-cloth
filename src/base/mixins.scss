@@ -6,3 +6,15 @@
     display: inline-block;
 }
 
+
+@mixin inputIcon {
+    content: "";        
+        position: absolute;        
+        top: 12px;
+        left: 16px;
+        height: 24px;
+        width: 24px;
+        z-index: 1;
+        
+}
+
